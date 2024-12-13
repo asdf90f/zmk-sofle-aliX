@@ -48,12 +48,12 @@
             timeout-ms = <50>;
             key-positions = <55 57>;
             bindings = <&tog 1>;
-			
+		};	
 		combo_SoundSwitchHotkey {
 			timeout-ms = <50>;
 			key-positions = <43 44>;
 			bindings = <&kp LC(LS(LA(F1)))>;
-	
+	    };
 		combo_CapsLock {
 			timeout-ms = <50>;
 			key-positions = <30 31>;
@@ -64,7 +64,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer0 {
+        layer_0 {
             bindings = <
 &none       &none      &none        &none        &none        &none      &kp RET  &none      &none       &none        &none        &none      &none
 &kp Q       &kp W      &kp F        &kp P        &kp B        &none      &kp RET  &none      &kp J       &kp L        &kp U        &kp Y      &kp APOS
