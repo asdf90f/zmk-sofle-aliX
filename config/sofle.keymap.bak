@@ -6,12 +6,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
-#define U_MS_U &mmv MOVE_UP
-#define U_MS_D &mmv MOVE_DOWN
-#define U_MS_L &mmv MOVE_LEFT
-#define U_MS_R &mmv MOVE_RIGHT
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  //  600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
@@ -29,7 +23,7 @@
             delay-ms = <0>;                   //   10
         };
 		
-		ht: require_prior_idle {
+		hrm: require_prior_idle {
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
 			flavor = "balanced";
@@ -73,11 +67,11 @@
 
         layer_0 {
             bindings = <
-&none       &none      &none        &none        &none        &none      &kp RET  &none      &none       &none        &none        &none      &none
-&kp Q       &kp W      &kp F        &kp P        &kp B        &none      &kp RET  &none      &kp J       &kp L        &kp U        &kp Y      &kp APOS
-&ht LGUI A  &ht LALT R &ht LSHFT S  &ht LCTRL T  &kp G        &none      &kp RET  &none      &kp M       &ht RCTRL N  &ht RSHFT E  &ht LALT I &ht RGUI O
-&kp Z       &kp X      &kp C        &kp D        &kp V        &none      &kp RET  &none      &kp K       &kp H        &kp COMMA    &kp DOT    &kp FSLH
-&none       &none      &none        &lt 5 ESC    &lt 4 SPACE  &lt 6 TAB  &kp RET  &lt 3 RET  &lt 2 BSPC  &lt 7 DEL    &none        &none
+&none        &none       &none         &none         &none        &none      &kp RET  &none      &none       &none         &none         &none       &none
+&kp Q        &kp W       &kp F         &kp P         &kp B        &none      &kp RET  &none      &kp J       &kp L         &kp U         &kp Y       &kp APOS
+&hrm LGUI A  &hrm LALT R &hrm LSHFT S  &hrm LCTRL T  &kp G        &none      &kp RET  &none      &kp M       &hrm RCTRL N  &hrm RSHFT E  &hrm LALT I &hrm RGUI O
+&kp Z        &kp X       &kp C         &kp D         &kp V        &none      &kp RET  &none      &kp K       &kp H         &kp COMMA     &kp DOT     &kp FSLH
+&none        &none       &none         &lt 5 ESC     &lt 4 SPACE  &lt 6 TAB  &kp RET  &lt 3 RET  &lt 2 BSPC  &lt 7 DEL     &none         &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
