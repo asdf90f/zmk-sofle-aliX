@@ -158,8 +158,8 @@
             bindings = <
 &none       &none         &none         &none       &none       &none  &kp RET  &none        &none         &none            &none            &none             &none
 &kp C_STOP  &kp C_RW      &kp C_FF      &kp C_PP    &none       &none  &kp RET  &none        &none         &rgb_ug RGB_EFR  &rgb_ug RGB_HUI  &rgb_ug  RGB_SAI  &rgb_ug RGB_BRI
-&kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &kp C_MUTE  &none  &kp RET  &none        &bl BL_CYCLE  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug  RGB_SAD  &rgb_ug RGB_BRD
-&none       &none         &none         &none       &none       &none  &kp RET  &none        &none         &bl BL_TOG       &rgb_ug RGB_TOG  &none             &none
+&kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &kp C_MUTE  &none  &kp RET  &none        &none         &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug  RGB_SAD  &rgb_ug RGB_BRD
+&none       &none         &none         &none       &none       &none  &kp RET  &none        &none         &none            &rgb_ug RGB_TOG  &none             &none
 &none       &none         &none         &none       &none       &none  &kp RET  &bootloader  &sys_reset    &trans           &none            &none
             >;
 			
