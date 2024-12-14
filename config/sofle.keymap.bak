@@ -49,8 +49,8 @@
 	    };
 		combo_CapsLock {
 			timeout-ms = <30>;
-			key-positions = <15 16>;
-			bindings = <&kp CLCK>;
+			key-positions = <29 30>;
+			bindings = <&kp CAPS>;
         };
 		combo_WinShiftS {
 			timeout-ms = <30>;
@@ -59,7 +59,7 @@
         };
 		combo_WinShiftZ {
 			timeout-ms = <30>;
-			key-positions = <41 42>;
+			key-positions = <16 17>;
 			bindings = <&kp LG(LS(Z))>;
         };
 	};
@@ -131,7 +131,7 @@
             bindings = <
 &none      &none      &none      &none      &none     &none  &kp RET  &none    &none     &none      &none      &none     &none
 &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INS   &none  &kp RET  &none    &none     &none      &none      &none     &none
-&kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp CLCK  &none  &kp RET  &none    &none     &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
+&kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS  &none  &kp RET  &none    &none     &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y) &none  &kp RET  &none    &none     &none      &none      &none     &none
 &none      &none      &none      &none      &trans    &none  &kp RET  &kp RET  &kp BSPC  &kp DEL    &none      &none
             >;
@@ -168,10 +168,10 @@
 
         07_Adjust {
             bindings = <
-&kp LG(LS(Z))  &kp LG(LS(S)) &kp PSCRN   &none       &none       &bootloader  &kp RET  &none  &none            &none            &none            &none             &none
-&kp C_RW       &kp C_VOL_DN  &kp C_PREV  &kp C_STOP  &none       &none        &kp RET  &none  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug  RGB_SAD  &rgb_ug RGB_BRD
-&kp C_FF       &kp C_VOL_UP  &kp C_NEXT  &kp C_PP    &kp C_MUTE  &none        &kp RET  &none  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug  RGB_SAI  &rgb_ug RGB_BRI
-&none          &none         &none       &none       &none       &none        &kp RET  &none  &none            &none            &rgb_ug RGB_TOG  &none             &none
+&kp LG(LS(Z))  &kp LG(LS(S)) &kp PSCRN   &none       &none       &bootloader  &kp RET  &none  &none            &none            &none            &none            &none
+&kp C_RW       &kp C_VOL_DN  &kp C_PREV  &kp C_STOP  &none       &none        &kp RET  &none  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD
+&kp C_FF       &kp C_VOL_UP  &kp C_NEXT  &kp C_PP    &kp C_MUTE  &none        &kp RET  &none  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI
+&none          &none         &none       &none       &none       &none        &kp RET  &none  &none            &none            &none            &none            &none
 &none          &none         &none       &trans      &none       &none        &kp RET  &none  &rgb_ug RGB_TOG  &none            &none            &none
             >;
 			
