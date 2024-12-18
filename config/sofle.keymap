@@ -42,10 +42,20 @@
             key-positions = <0 1>;
             bindings = <&tog 1>;
 		};	
-		combo_SoundSwitchHotkey {
+		combo_AudioOutputSwitch {
 			timeout-ms = <30>;
 			key-positions = <0 1 2>;
 			bindings = <&kp LC(LS(LA(F1)))>;
+	    };
+		combo_DiscordMute {
+			timeout-ms = <30>;
+			key-positions = <0 1 2 3>;
+			bindings = <&kp LA(B)>;
+	    };
+		combo_AltTab {
+			timeout-ms = <30>;
+			key-positions = <55 13>;
+			bindings = <&kp LA(TAB)>;
 	    };
 		combo_CapsLock {
 			timeout-ms = <30>;
