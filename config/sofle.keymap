@@ -74,16 +74,16 @@
 			bindings = <&kp LG(LS(Z))>;
 		*/
         };
-	};
-	
-    scroll_encoder: scroll_encoder {
+	};	
+/*
+	scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <1>;
+        #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
         tap-ms = <30>;
     };
-
+*/
     keymap {
         compatible = "zmk,keymap";
 
