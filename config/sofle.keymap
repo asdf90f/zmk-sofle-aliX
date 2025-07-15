@@ -52,6 +52,7 @@
 			key-positions = <0 1 2 3>;
 			bindings = <&kp LA(B)>;
 	    };
+		/* old combos, temporarily disabled
 		combo_AltTab {
 			timeout-ms = <30>;
 			key-positions = <55 13>;
@@ -71,6 +72,7 @@
 			timeout-ms = <30>;
 			key-positions = <16 17>;
 			bindings = <&kp LG(LS(Z))>;
+		*/
         };
 	};
 	
@@ -88,8 +90,8 @@
         00_ColemakDH {
             bindings = <
 &none        &none       &none         &none         &none        &none      &kp RET  &none      &none       &none         &none         &none       &none
-&kp Q        &kp W       &kp F         &kp P         &kp B        &none      &kp RET  &none      &kp J       &kp L         &kp U         &kp Y       &kp APOS
-&hrm LGUI A  &hrm LALT R &hrm LSHFT S  &hrm LCTRL T  &kp G        &none      &kp RET  &none      &kp M       &hrm RCTRL N  &hrm RSHFT E  &hrm LALT I &hrm RGUI O
+&hrm LGUI Q  &hrm LALT W &hrm LSHFT F  &hrm LCTRL P  &kp B        &none      &kp RET  &none      &kp J       &hrm RCTRL L  &hrm RSHFT U  &hrm LALT Y &hrm RGUI APOS
+&kp A        &kp R       &kp S         &kp T         &kp G        &none      &kp RET  &none      &kp M       &kp N         &kp E         &kp I       &kp O
 &kp Z        &kp X       &kp C         &kp D         &kp V        &none      &kp RET  &none      &kp K       &kp H         &kp COMMA     &kp DOT     &kp FSLH
 &none        &none       &none         &lt 7 ESC     &lt 4 SPACE  &lt 6 TAB  &kp RET  &lt 3 RET  &lt 2 BSPC  &lt 5 DEL     &none         &none
             >;
@@ -165,11 +167,11 @@
 
         06_Function {
             bindings = <
-&kp GRAVE  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp RET  &none  &none   &none      &none      &none     &none
-&kp F10    &kp F7  &kp F8  &kp F9  &kp Y   &kp U   &kp RET  &none  &none   &none      &none      &none     &none
-&kp F11    &kp F4  &kp F5  &kp F6  &kp H   &kp J   &kp RET  &none  &none   &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
-&kp F12    &kp F1  &kp F2  &kp F3  &kp N   &kp M   &kp RET  &none  &none   &none      &none      &none     &none
-&none      &none   &none   &tog 1  &none   &trans  &kp RET  &none  &none   &none      &none      &none
+&kp GRAVE  &kp N6  &kp N7  &kp N8  &kp N9   &kp N0  &kp RET  &kp LG(LS(Z)) &kp LG(LS(S)) &kp PSCRN  &none      &none     &none
+&kp F10    &kp F7  &kp F8  &kp F9  &kp Y    &kp U   &kp RET  &none         &none         &none      &none      &none     &none
+&kp F11    &kp F4  &kp F5  &kp F6  &kp H    &kp J   &kp RET  &none         &none         &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
+&kp F12    &kp F1  &kp F2  &kp F3  &kp N    &kp M   &kp RET  &none         &none         &none      &none      &none     &none
+&none      &none   &none   &tog 0  &tog 1   &trans  &kp RET  &none         &none         &none      &none      &none
             >;
 			
             display-name = "06_Function";
