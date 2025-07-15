@@ -149,7 +149,7 @@
 &kp F10    &kp F7  &kp F8  &kp F9  &kp Y    &kp U   &kp RET  &none         &none         &none      &none      &none     &none
 &kp F11    &kp F4  &kp F5  &kp F6  &kp H    &kp J   &kp RET  &none         &none         &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
 &kp F12    &kp F1  &kp F2  &kp F3  &kp N    &kp M   &kp RET  &none         &none         &none      &none      &none     &none
-&none      &none   &none   &tog 0  &tog 1   &trans  &kp RET  &none         &none         &none      &none      &none
+&none      &none   &none   &tog 1  &none    &trans  &kp RET  &none         &none         &none      &none      &none
             >;
 			
             display-name = "06_Function";
