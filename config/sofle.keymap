@@ -45,7 +45,7 @@
 		lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
             display-name = "Layer-Tap";
@@ -163,11 +163,11 @@
 
         06_Function {
             bindings = <
-&kp LG(LS(Z))  &kp LG(LS(S)) &kp PSCRN &none     &none &none  &kp RET &none &none &none  &none  &none  &none
-&none          &none         &none     &none     &none &none  &kp RET &none &none &kp F7 &kp F8 &kp F9 &kp F10
-&kp LGUI       &kp LALT      &kp LSHFT &kp LCTRL &none &none  &kp RET &none &none &kp F4 &kp F5 &kp F6 &kp F11
-&none          &none         &none     &none     &none &none  &kp RET &none &none &kp F1 &kp F2 &kp F3 &kp F12
-&none          &none         &none     &trans    &none &none  &kp RET &none &none &none  &none  &none
+&kp LG(LS(Z))  &kp LG(LS(S)) &kp PSCRN &none     &none     &none  &kp RET &none &none &none  &none  &none  &none
+&none          &none         &none     &none     &none     &none  &kp RET &none &none &kp F7 &kp F8 &kp F9 &kp F10
+&kp LGUI       &kp LALT      &kp LSHFT &kp LCTRL &none     &none  &kp RET &none &none &kp F4 &kp F5 &kp F6 &kp F11
+&kp LC(Z)      &kp LC(X)     &kp LC(C) &kp LC(V) &kp LC(Y) &none  &kp RET &none &none &kp F1 &kp F2 &kp F3 &kp F12
+&none          &none         &none     &trans    &none     &none  &kp RET &none &none &none  &none  &none
             >;
 			
             display-name = "06_Function";
